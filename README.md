@@ -11,33 +11,27 @@ Curriculum Vitae Web is a wasmJs Compose Multiplatform project targeting Web tha
   - Open the Play Store app.
 
 <img src="img/initial.webp" width="25%"/>
-
   - Click on the user.
 
 <img src="img/menu.webp" width="25%"/>
-
   - Click on 'Settings' item.
 
 <img src="img/about.webp" width="25%"/>
-
   - Click on 'About' item to open more settings and click 7 times on 'Play Store version' item to activate developer options.
 
 <img src="img/general.webp" width="25%"/>
-
   - Click on 'General' item to open more settings and click on 'Developer options' item.
 
 <img src="img/developer_options.webp" width="25%"/>
-
   - Click on 'Internal app sharing' switch to enable Internal app installation.
 
 <img src="img/turn_on.webp" width="25%"/>
-
   - Click on 'Turn on' button to confirm the Internal app installation option.
 
 * Install the app through the web:
-  - Open the received url
-  - Click on 'for Android' button
-  - Install the app from the opened Play Store screen
+  - Open the received url.
+  - Click on 'for Android' button.
+  - Install the app from the opened Play Store screen.
 
 ## How to install iOS App
 
@@ -61,7 +55,7 @@ Coming soon!
 I usually use Squash and merge for features, so that they stay as a single commit in develop, and use Merge to merge develop into master, so we have a very clean git and it's much easier to follow the flow of it.
 Github allows us to restore branches that have already been Squash and merged, so we don't lose the flow of commits for that feature.
 
-In this case, I do a Merge.
+In this case, I do a Merge to get visible all the steps that I made.
 
 ### Important used libraries
 - Buildkonfig: To create variants and fields.
