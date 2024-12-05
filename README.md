@@ -8,6 +8,7 @@ Curriculum Vitae Web is a wasmJs Compose Multiplatform project targeting Web tha
 ## How to install Android App
 
 * Enable Internal app installation:
+
   1- Open the Play Store app.
 
 <img src="img/initial.webp" width="25%"/>
