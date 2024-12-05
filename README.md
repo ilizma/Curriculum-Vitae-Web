@@ -1,18 +1,55 @@
-This is a Kotlin Multiplatform project targeting Web.
+
+# Curriculum Vitae Web by Iosu Lizarraga Madinabeitia
+
+## Summary
+
+Curriculum Vitae Web is a wasmJs Compose Multiplatform project targeting Web that allows downloading the Compose Multiplatform [Curriculum Vitae App](https://github.com/ilizma/Curriculum-Vitae-App) for Android and/or iOS, differentiated by flavor to be able to have multiple CVs.
+
+## How to install Android App
+
+* Enable Internal app installation
+- Open the Play Store app.
+<img src="img/initial.webp" width="25%"/>
+- Click on the user.
+<img src="img/menu.webp" width="25%"/>
+- Click on 'Settings' item.
+<img src="img/about.webp" width="25%"/>
+- Click on 'About' item to open more settings and click 7 times on 'Play Store version' item to activate developer options.
+<img src="img/general.webp" width="25%"/>
+- Click on 'General' item to open more settings and click on 'Developer options' item.
+<img src="img/developer_options.webp" width="25%"/>
+- Click on 'Internal app sharing' switch to enable Internal app installation.
+<img src="img/turn_on.webp" width="25%"/>
+- Click on 'Turn on' button to confirm the Internal app installation option.
+
+* Install the app through the web
+- Open the received url
+- Click on 'for Android' button
+- Install the app from the opened Play Store screen
+
+## How to install iOS App
+
+Coming soon!
+
+## App structure description
 
 * `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
   - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+  - `wasmJsMain` is for code that’s that will be compiled for only for web target.
 
+## App Flow
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+![Screen 1 - Web](img/web.webp)
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+## GitFlow
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+<img src="img/gitflow.webp" alt="GitFlow" width="50%"/> <img src="img/squash.webp" alt="Squash and merge" width="40%"/>
+
+I usually use Squash and merge for features, so that they stay as a single commit in develop, and use Merge to merge develop into master, so we have a very clean git and it's much easier to follow the flow of it.
+Github allows us to restore branches that have already been Squash and merged, so we don't lose the flow of commits for that feature.
+
+In this case, I do a Merge.
+
+### Important used libraries
+- Buildkonfig: To create variants and fields

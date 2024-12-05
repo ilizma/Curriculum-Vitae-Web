@@ -1,7 +1,6 @@
 import com.codingfeline.buildkonfig.compiler.FieldSpec.Type.STRING
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
-import java.util.regex.Pattern
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -47,14 +46,7 @@ kotlin {
     }
 }
 
-project.extra.set("buildkonfig.flavor", currentBuildVariant())
-
-private fun Project.currentBuildVariant(): String {
-    val variants = setOf("lrhr", "ilizma")
-    return System.getenv()["VARIANT"]
-        .toString()
-        .takeIf { it in variants } ?: "lrhr"
-}
+project.extra.set("buildkonfig.flavor", "ilizma")
 
 buildkonfig {
     packageName = "com.ilizma.curriculumvitaeapp"
@@ -81,7 +73,7 @@ buildkonfig {
         buildConfigField(
             STRING,
             "PLAY_STORE_URL",
-            ""
+            "https://play.google.com/apps/test/RQNPU1JN6Us/ahAO29uNTglmGMvYz2TcxLitmd7Yv5d8k2FWbLFLuTAcPM2NVEtpww8NAZir0XoHmsPCgvKUKF2h_pvTS9pkmpwFNV"
         )
     }
 }
