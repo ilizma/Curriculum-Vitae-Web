@@ -52,4 +52,4 @@ Github allows us to restore branches that have already been Squash and merged, s
 In this case, I do a Merge.
 
 ### Important used libraries
-- Buildkonfig: To create variants and fields
+- Buildkonfig: To create variants and fields.
