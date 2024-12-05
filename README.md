@@ -8,25 +8,31 @@ Curriculum Vitae Web is a wasmJs Compose Multiplatform project targeting Web tha
 ## How to install Android App
 
 * Enable Internal app installation:
-  - Open the Play Store app.
+  1- Open the Play Store app.
 
 <img src="img/initial.webp" width="25%"/>
-  - Click on the user.
+
+  2- Click on the user.
 
 <img src="img/menu.webp" width="25%"/>
-  - Click on 'Settings' item.
+
+  3- Click on 'Settings' item.
 
 <img src="img/about.webp" width="25%"/>
-  - Click on 'About' item to open more settings and click 7 times on 'Play Store version' item to activate developer options.
+
+  4- Click on 'About' item to open more settings and click 7 times on 'Play Store version' item to activate developer options.
 
 <img src="img/general.webp" width="25%"/>
-  - Click on 'General' item to open more settings and click on 'Developer options' item.
+
+  5- Click on 'General' item to open more settings and click on 'Developer options' item.
 
 <img src="img/developer_options.webp" width="25%"/>
-  - Click on 'Internal app sharing' switch to enable Internal app installation.
+
+  6- Click on 'Internal app sharing' switch to enable Internal app installation.
 
 <img src="img/turn_on.webp" width="25%"/>
-  - Click on 'Turn on' button to confirm the Internal app installation option.
+
+  7- Click on 'Turn on' button to confirm the Internal app installation option.
 
 * Install the app through the web:
   - Open the received url.
